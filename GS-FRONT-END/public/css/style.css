@@ -1,0 +1,192 @@
+
+body {
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: #004080;
+  color: #fff;
+  padding:  0px 0;
+  text-align: center;
+}
+
+header.logo img {
+  width: 150px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section:nth-of-type(even) {
+  background: #f4f4f4;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+ul {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+
+section img {
+  width: 400px;
+  height: auto;
+}
+
+footer img {
+  width: 30px;
+  height: auto;
+}
+
+footer {
+  background: #004080;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer.redes-sociais img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+footer.redes-sociais a {
+  display: inline-block;
+}
+
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 20px 10px;
+  }
+
+  ul {
+    text-align: center;
+  }
+
+
+  section img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 10px 5px;
+  }
+
+  ul {
+    text-align: center;
+  }
+
+  section img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+.carrosel-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carrosel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carrosel img {
+  min-width: 100%;
+  display: none;
+}
+
+.carrosel img.active {
+  display: block;
+  margin: auto;
+}
+
+.carrosel-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.carrosel-buttons button {
+  margin: 0 5px;
+  padding: 10px;
+}
+
